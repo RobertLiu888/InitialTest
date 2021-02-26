@@ -1,9 +1,194 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello World!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our menu</title>
+<style>
+<link rel="stylesheet" href="css/styles.css">
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-bottom: 15px;
+	text-align: center;
+}
+
+p {
+  /*border: 1px solid black;
+  background-color: #A52A2A;
+  width: 90%;
+  height: 150px;*/
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Helvetica;
+  color: black;
+	font-size: 12px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+	.p1, .p2, .p3{
+		float: left;
+    border: 1px solid black;
+	}
+  .p1 {
+    width: 30%;
+		height: 120px;
+		background-color: #808080;
+	  position: relative;
+		margin-left: 2.5%;
+		margin-right: 2%;
+  }
+  .p2 {
+    width: 30%;
+    height: 120px;
+		background-color: #808080;
+		position: relative;
+		margin-right: 2%;
+  }
+	.p3 {
+    width: 30%;
+    height: 120px;
+		background-color: #808080;
+		position: relative;
+		margin-right: 2%;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	.p1, .p2, .p3{
+		float: left;
+    border: 1px solid black;
+	}
+  .p1 {
+    width: 40%;
+		height: 120px;
+		background-color: #808080;
+	  position: relative;
+		left: 50px;
+		margin-right: 5%;
+  }
+  .p2 {
+    width: 40%;
+    height: 120px;
+		background-color: #808080;
+		position: relative;
+		left: 50px;
+  }
+	.p3 {
+    width: 85%;
+    height: 120px;
+		background-color: #808080;
+		position: relative;
+		left: 50px;
+		top: 50px;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+	.p1, .p2, .p3{
+		float: left;
+    border: 1px solid black;
+	}
+  .p1 {
+    width: 80%;
+		height: 100px;
+		background-color: #808080;
+	  position: relative;
+		top: 30px;
+		margin-bottom: 50px;
+  }
+  .p2 {
+    width: 80%;
+    height: 100px;
+		background-color: #808080;
+		position: relative;
+		top:30px;
+		margin-bottom: 50px;
+  }
+	.p3 {
+    width: 80%;
+    height: 100px;
+		background-color: #808080;
+		position: relative;
+		top:30px;
+		margin-bottom: 50px;
+  }
+}
+
+.chastyle1{
+	position: relative;
+	background-color: #D59898;
+	width: 133px;
+	height: 35px;
+	border: 1px solid black;
+	float: right;
+	font-size: 16px;
+	font-weight:bold;
+	text-align: center;
+	padding: 7px 0;
+}
+
+.chastyle2{
+	position: relative;
+	background-color: #C14543;
+	width: 133px;
+	height: 35px;
+	border: 1px solid black;
+	float: right;
+	font-size: 16px;
+	font-weight:bold;
+	text-align: center;
+	padding: 7px 0;
+}
+
+.chastyle3{
+	position: relative;
+	background-color: #E5D198;
+	width: 133px;
+	height: 35px;
+	border: 1px solid black;
+	float: right;
+	font-size: 16px;
+	font-weight:bold;
+	text-align: center;
+	padding: 7px 0;
+}
+
+</style>
 </head>
+
+
 <body>
-<h1>Hello everyone! It is great opportunity for me!</h1>
+<h1>Our Menu</h1>
+
+<div class="row">
+  <div class="p1">
+		<div class="chastyle1">Chicken</div>
+		<p>Orange Sauce is a mixture of vinegar, soy sauce, sesame oil, sugar, orange zest and crushed crushed red peppers that thicken in a pan with deep fried battered chicken with will help thicken the sauce, It is super easy to make.</p>
+	</div>
+  <div class="p2">
+		<div class="chastyle2">Beef</div>
+		<p>Boiled beef is a traditional English dish which used to be eaten by working-class people in London; however, its popularity has decreased in recent years. Traditionally, cheaper cuts of meat were used; boiling makes the meat more tender than roasting. It was usually cooked with onions and served with carrots and boiled potatoes.</p>
+	</div>
+  <div class="p3">
+		<div class="chastyle3">Sushi</div>
+		<p>Sushi is a traditional Japanese dish of prepared vinegared rice (sushi-meshi), usually with some sugar and salt, accompanying a variety of ingredients (neta), such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is "sushi rice".</p>
+	</div>
+</div>
+
 </body>
 </html>
